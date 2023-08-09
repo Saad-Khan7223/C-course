@@ -1,0 +1,2 @@
+Heap : stores reference type data like object
+stack: primitive data like int struct is also stored in stack
