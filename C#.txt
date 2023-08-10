@@ -1,2 +1,8 @@
 Heap : stores reference type data like object
 stack: primitive data like int struct is also stored in stack
+C# os case sensitive
+static void Main()   void means return nothing Main is our main method static means method can be called without an object 
+
+static void Main()// this is private method
+public static void Main()// this is public method
+static void Main(String[] args)// to allow command line arguments args is user defined you can name it what ever you like
