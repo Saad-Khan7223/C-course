@@ -1,0 +1,131 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace variablesInCharp
+{
+    class Box
+    {
+        private int x;
+        private int y;
+        private int z;
+        public Box(int x, int y, int z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+        public int getX() { return x; } 
+        public int getY() { return y; }
+        public int getZ() { return z; }
+
+        public static Box operator + (Box left, Box right)
+        {
+            return new Box(left.getX() + right.getX(), left.getY() + right.getY(), left.getZ() + right.getZ()); 
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // overloading method
+
+            /*Box b=new Box(1, 2, 3);
+            Box c=new Box(2, 3, 4);
+            Box d = c + b;
+            Console.WriteLine(d.getX());
+            Console.WriteLine(d.getY());
+            Console.WriteLine(d.getZ());*/
+            /*   int a = 5;
+               string x = "hello world";
+               bool b = true;
+               char c = 'a';
+               float f = 22.0f;
+               Console.WriteLine("Hello");*/
+            System.Diagnostics.Debug.WriteLine("hello");
+            /*Conditional Statement*/
+            /*  int b = 15;
+              if (b==12)
+              {
+                  Console.WriteLine("Hello iF");
+              }
+              else if(b==15)
+              {
+                  Console.WriteLine("Hello from else if");
+              }
+              else
+              {
+                  Console.WriteLine("hello from else");
+              }*/
+
+            /*LOOPS*/
+            /* for(int i = 0; i<=10; i++)
+             {
+                 Console.WriteLine("Heelo"+i);
+             }*/
+
+            /* int i = 0;
+                 while(i<10)
+             {
+                 Console.WriteLine(i);
+                 i++;
+             }*/
+
+
+            /*Function*/
+
+            /* hello();*/
+
+            /*   paraPrint("HELlo from saad");*/
+
+
+            /*Modulus*/
+            /*    Console.WriteLine(5 % 4);*/
+
+            // Increment and Decrement post increment and post decrement
+            /*int i = 5;
+           Console.WriteLine(i++);
+            Console.WriteLine(i);*/
+
+            /*IS operator*/
+            /*bool i=true is  string;
+            Console.WriteLine(i);*/
+
+            /* AS operator*/
+            /*  string s1 = "2";
+              object obj = s1;
+              Console.WriteLine(obj);
+              string s2 = obj as string;
+              Console.WriteLine(s2);*/
+
+            /* Ternary operator*/
+
+            /*          int x=5;
+                      int y=3;
+                      bool isgreater= x>y ?true:false;*/
+
+            /*null coalescing operator*/
+            /*object obj = null;
+            object obj2=obj??new object();*/
+
+            //size of oeprator
+            /* Console.WriteLine(sizeof(char));*/
+            //type off operator
+            /*Console.WriteLine(typeof(int));*/
+
+            //  opeartor overloading
+
+        }
+      static  void hello()
+        {
+            Console.WriteLine("Hello");
+        }
+        static void paraPrint(string str)
+        {
+            Console.WriteLine(str);
+        }
+    }
+}
