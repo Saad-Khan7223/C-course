@@ -6,3 +6,5 @@ static void Main()   void means return nothing Main is our main method static me
 static void Main()// this is private method
 public static void Main()// this is public method
 static void Main(String[] args)// to allow command line arguments args is user defined you can name it what ever you like
+
+dynamic example=1; // if we want to not check the type of variable by complier

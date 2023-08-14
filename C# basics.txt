@@ -45,7 +45,7 @@ namespace variablesInCharp
                char c = 'a';
                float f = 22.0f;
                Console.WriteLine("Hello");*/
-            System.Diagnostics.Debug.WriteLine("hello");
+            /*   System.Diagnostics.Debug.WriteLine("hello");*/
             /*Conditional Statement*/
             /*  int b = 15;
               if (b==12)
@@ -117,6 +117,50 @@ namespace variablesInCharp
             /*Console.WriteLine(typeof(int));*/
 
             //  opeartor overloading
+            /* faren(50);*/
+            /*  System.Diagnostics.Debug.Write("hello\nsaad");
+               System.Diagnostics.Debug.Write(@"hello\nsaad");*/
+            /* string s = "hello";
+             System.Diagnostics.Debug.WriteLine($"Hello my name is {s}");
+             string example1 = "abc";
+             System.Diagnostics.Debug.WriteLine(example1.Contains("bc"));
+             System.Diagnostics.Debug.WriteLine(example1.Substring(0,2));
+             System.Diagnostics.Debug.WriteLine("booby goes\"in the jungle\"");
+             System.Diagnostics.Debug.WriteLine("booby goes\"in the jungle\\\"");
+             System.Diagnostics.Debug.WriteLine("a\b");
+            Console.WriteLine("\a");//alert
+             System.Diagnostics.Debug.WriteLine("a\rb");
+             System.Diagnostics.Debug.WriteLine("a\tb");*/
+/*
+            int p = 10;
+            int p2 = 23;
+            float f = 0.2f;
+            System.Diagnostics.Debug.WriteLine(string.Format("the price is {0:C} \n the price is {1:c}",p,p2));
+            System.Diagnostics.Debug.WriteLine(string.Format("the percentage {0:p}",f));*/
+
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("hello world");
+            for(int i=0; i<4; i++)
+            {
+                sb.Append("nice to see you");
+            }
+            string ss= sb.ToString();
+            System.Diagnostics.Debug.WriteLine(ss);
+            sb.Clear();
+            string s1= sb.ToString();
+            System.Diagnostics.Debug.WriteLine(s1);
+            string s = "ee";
+            System.Diagnostics.Debug.WriteLine(s.IndexOf("e"));
+            System.Diagnostics.Debug.WriteLine(s.ToUpper());
+            System.Diagnostics.Debug.WriteLine(s.ToLower());
+            System.Diagnostics.Debug.WriteLine(s.Insert(2,"r"));
+            s=s.Remove(1);
+            System.Diagnostics.Debug.WriteLine(s);
+            s = s.Insert(0, "A");
+            s = s.Trim('A');
+            System.Diagnostics.Debug.WriteLine(s);
+            s = s.Replace('e','S');
 
         }
       static  void hello()
@@ -126,6 +170,11 @@ namespace variablesInCharp
         static void paraPrint(string str)
         {
             Console.WriteLine(str);
+        }
+        static void faren(int far)
+        {
+            int cel = (far - 32) * 5 / 9;
+         Console.WriteLine(cel);
         }
     }
 }
